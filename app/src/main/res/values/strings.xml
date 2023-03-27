@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">Class App</string>
+    <string name="btn_name">My Button</string>
+    <string name="linear_layout_with_vertical_orientation">Leaner Layout with Vertical Orientation</string>
+    <string name="linear_layout_with_horizontal_orientation">Leaner Layout with Horizontal Orientation</string>
 </resources>
