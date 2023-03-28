@@ -5,4 +5,6 @@
     <dimen name="text_md">20sp</dimen>
     <dimen name="text_lg">24sp</dimen>
     <dimen name="text_xl">28sp</dimen>
+    <dimen name="size_md">30dp</dimen>
+    <dimen name="size_lg">80dp</dimen>
 </resources>

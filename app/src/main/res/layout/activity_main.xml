@@ -1,11 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
-    <TextView
-        android:text="@string/app_name"
+    android:orientation="vertical"
+    android:paddingHorizontal="20dp">
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
-</LinearLayout>
+        android:layout_height="wrap_content"
+        android:layout_marginTop="220dp"
+        android:ems="10"
+        android:paddingHorizontal="15dp"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:background="@drawable/r"
+        android:paddingVertical="15dp"
+        android:inputType="textPersonName"
+        android:hint="UserName"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="56dp" />
+
+    <EditText
+        android:paddingHorizontal="15dp"
+        android:id="@+id/editTextTextPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Password"
+        android:paddingVertical="15dp"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:background="@drawable/r"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName"
+        app:layout_constraintVertical_bias="0.064"
+        tools:layout_editor_absoluteX="100dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Button"
+        android:background="@drawable/r"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword"
+        app:layout_constraintVertical_bias="0.131"
+        tools:layout_editor_absoluteX="158dp" />
+
+    <TextView
+        android:text="@string/or_signup"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:textColor="@color/teal_200"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        app:layout_constraintVertical_bias="0.111"
+        tools:layout_editor_absoluteX="3dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
