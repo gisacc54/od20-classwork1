@@ -1,11 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
     <TextView
-        android:text="@string/app_name"
+        android:id="@+id/tvSelectTheme"
+        android:text="@string/settings_text_select_theme"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="wrap_content"/>
+    <Spinner
+        android:id="@+id/spThemes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/theme_array"/>
+    <TextView
+        android:id="@+id/tvCredentials"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/settings_text_credentials" />
+    <EditText
+        android:id="@+id/tvUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/settings_text_username_hint"
+        android:inputType="text"
+        android:lines="1" />
+    <EditText
+        android:id="@+id/tvpassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/settings_text_password_hint"
+        android:inputType="textPassword"
+        android:lines="1" />
+    <TextView
+        android:id="@+id/tvSync"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/settings_text_sync_automatically"
+        android:textSize="17sp" />
+
+    <CheckBox
+        android:id="@+id/checkbox_sync_automatically"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="true" />
+
+    <TextView
+        android:id="@+id/tvLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/settings_text_location"
+        android:textSize="17sp" />
+
+    <Switch
+        android:id="@+id/toggle_google"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textOff="@string/settings_text_state_off"
+        android:textOn="@string/settings_text_state_on"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    <Button
+        android:id="@+id/btnClearData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/settings_text_clear_data" />
 </LinearLayout>
