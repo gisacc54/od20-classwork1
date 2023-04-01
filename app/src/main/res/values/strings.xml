@@ -5,4 +5,8 @@
     <string name="linear_layout_with_horizontal_orientation">Leaner Layout with Horizontal Orientation</string>
     <string name="od_20">OD20</string>
     <string name="or_signup">Or Signup</string>
+    <string name="login">Login</string>
+    <string name="don_t_have_an_account_create_account">Don\'t have an account? create account</string>
+    <string name="password">Password</string>
+    <string name="username">Username</string>
 </resources>
