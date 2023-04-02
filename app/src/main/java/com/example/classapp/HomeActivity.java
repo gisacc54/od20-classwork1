@@ -4,17 +4,22 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class HomeActivity extends AppCompatActivity implements View.OnClickListener {
 
     public TextView menuAll;
     public TextView menuFavorite;
-    public FloatingActionButton creteNoteFloatButon;
+    public FloatingActionButton creteNoteFloatButton;
+    public ListView noteListView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,11 +28,21 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
         //initialize views
         menuAll = (TextView) findViewById(R.id.menuAll);
         menuFavorite = (TextView) findViewById(R.id.menuFavorite);
-        creteNoteFloatButon = (FloatingActionButton) findViewById(R.id.creteNoteFloatButon);
+        creteNoteFloatButton = (FloatingActionButton) findViewById(R.id.creteNoteFloatButton);
+
+        noteListView = (ListView) findViewById(R.id.noteListView);
+
+        ArrayList<String> myList = new ArrayList<String>();
+        myList.add("test");
+        myList.add("test1");
+        myList.add("test2");
+        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this, R.layout.list_item,R.id.list_note_title,myList);
+
+        noteListView.setAdapter(arrayAdapter);
 
         menuAll.setOnClickListener(this);
         menuFavorite.setOnClickListener(this);
-        creteNoteFloatButon.setOnClickListener(this);
+        creteNoteFloatButton.setOnClickListener(this);
 
     }
 
@@ -45,7 +60,7 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
 
             menuAll.setTextAppearance(R.style.textMenu);
             menuAll.setBackground(getDrawable(R.drawable.no_borderbottom));
-        } else if (v.getId() == R.id.creteNoteFloatButon) {
+        } else if (v.getId() == R.id.creteNoteFloatButton) {
             Toast.makeText(this, "Create Notes", Toast.LENGTH_SHORT).show();
         }
     }
