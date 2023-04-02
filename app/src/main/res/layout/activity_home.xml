@@ -87,6 +87,8 @@
         <ListView
             android:id="@+id/noteListView"
             android:layout_width="match_parent"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="20dp"
             android:layout_height="match_parent">
 
         </ListView>

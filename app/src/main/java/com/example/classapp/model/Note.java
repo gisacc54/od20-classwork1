@@ -1,5 +1,7 @@
 package com.example.classapp.model;
 
+import java.util.Date;
+
 public class Note {
     private int id;
     private String title;
@@ -7,14 +9,24 @@ public class Note {
     private String image;
     private float latitude;
     private float longitude;
+    private Date date;
 
-    public Note(int id, String title, String body, String image, float latitude, float longitude) {
+    public Note(int id, String title, String body, String image, float latitude, float longitude,Date date) {
         this.id = id;
         this.title = title;
         this.body = body;
         this.image = image;
         this.latitude = latitude;
         this.longitude = longitude;
+        this.date = date;
+    }
+
+    public Date getDate() {
+        return date;
+    }
+
+    public void setDate(Date date) {
+        this.date = date;
     }
 
     public int getId() {
