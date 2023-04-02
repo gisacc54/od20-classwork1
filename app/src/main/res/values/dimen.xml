@@ -6,6 +6,9 @@
     <dimen name="text_lg">30sp</dimen>
     <dimen name="text_xl">40sp</dimen>
     <dimen name="text_xxl">50sp</dimen>
+
+    <dimen name="size_xs">10dp</dimen>
+    <dimen name="size_sm">20dp</dimen>
     <dimen name="size_md">30dp</dimen>
     <dimen name="size_lg">80dp</dimen>
 </resources>

@@ -1,17 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="test_lg" parent="TextAppearance.AppCompat">
+
+    <style name="text_xs" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/text_xs</item>
+        <item name="android:fontFamily">@font/montserrat_alternates_thin</item>
+    </style>
+    <style name="text_sm" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/text_sm</item>
+        <item name="android:fontFamily">@font/montserrat_alternates_regular</item>
+    </style>
+
+    <style name="text_md" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/text_md</item>
+        <item name="android:fontFamily">@font/montserrat_alternates_medium</item>
+    </style>
+
+    <style name="text_lg" parent="TextAppearance.AppCompat">
         <item name="android:textSize">@dimen/text_lg</item>
-        <item name="android:textFontWeight">700</item>
+        <item name="android:fontFamily">@font/montserrat_alternates_semi_bold</item>
     </style>
 
-    <style name="test_xl" parent="TextAppearance.AppCompat">
+    <style name="text_xl" parent="TextAppearance.AppCompat">
         <item name="android:textSize">@dimen/text_xl</item>
-        <item name="android:textFontWeight">800</item>
+        <item name="android:fontFamily">@font/montserrat_alternates_semi_bold</item>
     </style>
 
-    <style name="test_xxl" parent="TextAppearance.AppCompat">
+    <style name="text_xxl" parent="TextAppearance.AppCompat">
         <item name="android:textSize">@dimen/text_xxl</item>
-        <item name="android:textFontWeight">900</item>
+        <item name="android:fontFamily">@font/montserrat_alternates_extra_bold</item>
+    </style>
+
+    <style name="textMenu" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/text_md</item>
+        <item name="android:paddingHorizontal">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+    </style>
+    <style name="textMenuActive" parent="textMenu">
+        <item name="android:textColor">@color/logo_text</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:background">@drawable/borderbottom</item>
     </style>
 </resources>

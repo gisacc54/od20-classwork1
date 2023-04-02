@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Class App</string>
+    <string name="app_name">Notes</string>
     <string name="btn_name">My Button</string>
     <string name="linear_layout_with_vertical_orientation">Leaner Layout with Vertical Orientation</string>
     <string name="linear_layout_with_horizontal_orientation">Leaner Layout with Horizontal Orientation</string>
@@ -9,4 +9,7 @@
     <string name="don_t_have_an_account_create_account">Don\'t have an account? create account</string>
     <string name="password">Password</string>
     <string name="username">Username</string>
+    <string name="forgot_your_password_reset_it">Forgot your password? Reset it.</string>
+    <string name="menu_favorite">Favorite</string>
+    <string name="menu_all">All</string>
 </resources>

@@ -80,7 +80,7 @@
                         app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
                     <TextView
                         android:text="Or SignIn"
-                        style="@style/test_lg"
+                        style="@style/text_lg"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"/>
                     

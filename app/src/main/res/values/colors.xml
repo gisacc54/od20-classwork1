@@ -8,10 +8,16 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
-
-    <color name="input_color">#ffd9e2</color>
+    <!-- Input. -->
+    <color name="input_color">#d6b3bf</color>
     <color name="input_text_color">#3e001d</color>
     <color name="input_text_hit_color">#65334a</color>
+
+    <color name="logo_text">#3e001d</color>
+
+    <!-- Card. -->
+    <color name="card_color">#ffd9e2</color>
+    <color name="card_text_color">#3e001d</color>
 
     <color name="color_primary">#994060</color>
     <color name="color_primary_dark">#3e001d</color>
@@ -43,39 +49,5 @@
     <color name="color_surface_variant">#201a1b</color>
     <color name="color_on_surface_variant">#514346</color>
 
-
-    //dark
-
-    <color name="color_dark_primary">#ffb1c7</color>
-    <color name="color_dark_primary_dark">#5e1132</color>
-    <color name="color_dark_primary_container">#7b2948</color>
-    <color name="color_dark_on_primary_container">#ffd9e2</color>
-    <color name="color_dark_on_primary">#5e1132</color>
-
-    <color name="color_dark_secondary">#e3bdc6</color>
-    <color name="color_dark_secondary_dark">#ffd9e2</color>
-    <color name="color_dark_secondary_container">#5b3f47</color>
-    <color name="color_dark_on_secondary_container">#ffd9e2</color>
-    <color name="color_dark_on_secondary">#422931</color>
-
-    <color name="color_dark_tertiary">#efbd93</color>
-    <color name="color_dark_on_tertiary">#47290b</color>
-    <color name="color_dark_tertiary_container">#613f1f</color>
-    <color name="color_dark_tertiary_dark">#ffdcc1</color>
-
-    <color name="color_dark_error">#ffb4ab</color>
-    <color name="color_dark_on_error">#690005</color>
-    <color name="color_dark_error_container">#93000a</color>
-    <color name="color_dark_error_dark">#ffdad6</color>
-
-    <color name="color_dark_background">#201a1b</color>
-    <color name="color_dark_on_background">#ece0e1</color>
-
-    <color name="color_dark_surface">#201a1b</color>
-    <color name="color_dark_on_surface">#ece0e1</color>
-
-    <color name="color_dark_outline">#9e8c90</color>
-    <color name="color_dark_surface_variant">#514346</color>
-    <color name="color_dark_on_surface_variant">#d5c2c5</color>
 
 </resources>
